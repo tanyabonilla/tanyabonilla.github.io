@@ -1,3 +1,3 @@
 # tanyabonilla.github.io
 
-Student attempting to display her work.
+Some projects that were assigned in my Intro to Data Science course.
