@@ -1,3 +1,3 @@
 # tanyabonilla.github.io
 
-Some projects that were assigned in my Intro to Data Science course.
+An in progress portfolio page on my achievments, coding, and data experience.
