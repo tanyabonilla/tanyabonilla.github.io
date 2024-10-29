@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work in Progress</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
             display: flex;
@@ -11,63 +12,88 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f3f4f6;
-            color: #333;
+            font-family: 'Poppins', sans-serif;
+            background-color: #fef5e7;
+            color: #444;
         }
 
         .container {
             text-align: center;
             max-width: 600px;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            background-color: #fffaf0;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            position: relative;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
         }
 
         h1 {
-            font-size: 2rem;
-            margin: 0.5em 0;
-            color: #007acc;
+            font-size: 2.5rem;
+            color: #ff6f91;
+            margin-bottom: 0.5em;
         }
 
         p {
-            font-size: 1.1rem;
-            line-height: 1.6;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            color: #555;
         }
 
         .progress-bar {
             margin-top: 1.5em;
-            background-color: #e0e0e0;
-            border-radius: 5px;
+            background-color: #ffe5d9;
+            border-radius: 10px;
             overflow: hidden;
-            height: 20px;
+            height: 25px;
+            width: 80%;
+            margin: 0 auto;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .progress-bar-inner {
-            width: 60%; /* Adjust the width as needed to show progress */
+            width: 60%; /* Adjust as needed */
             height: 100%;
-            background-color: #007acc;
-            transition: width 0.4s ease;
+            background-color: #ff9aa2;
+            border-radius: 10px 0 0 10px;
+            animation: progress 3s ease-in-out infinite;
+        }
+
+        @keyframes progress {
+            0% { width: 10%; }
+            50% { width: 70%; }
+            100% { width: 10%; }
         }
 
         .footer {
             margin-top: 2em;
             font-size: 0.9rem;
-            color: #666;
+            color: #888;
+        }
+
+        .emoji {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 0.5em;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Work in Progress</h1>
-        <p>Thank you for visiting! My portfolio is currently under construction, and I'm working hard to create something amazing for you.</p>
+        <div class="emoji">🚧🛠️✨</div>
+        <h1>Coming Soon!</h1>
+        <p>Hi there! My portfolio is under a little makeover. I'm adding new content and fun features just for you!</p>
         
         <div class="progress-bar">
             <div class="progress-bar-inner"></div>
         </div>
 
-        <p>Check back soon for updates. Exciting projects are on the way!</p>
+        <p>Stay tuned for updates! I can't wait to share my work with you.</p>
 
         <div class="footer">
             <p>&copy; 2024 Your Name. All Rights Reserved.</p>
